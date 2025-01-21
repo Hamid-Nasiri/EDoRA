@@ -1,0 +1,27 @@
+2024-06-27 14:59:18,308 INFO    StreamThr :4111 [internal.py:wandb_internal():88] W&B internal server running at pid: 4111, started at: 2024-06-27 14:59:18.306703
+2024-06-27 14:59:18,314 DEBUG   HandlerThread:4111 [handler.py:handle_request():139] handle_request: status
+2024-06-27 14:59:18,316 DEBUG   SenderThread:4111 [sender.py:send_request():317] send_request: status
+2024-06-27 14:59:18,319 INFO    WriterThread:4111 [datastore.py:open_for_write():75] open: /home/user/DoRA-XS/wandb/offline-run-20240627_145918-7v1f7hom/run-7v1f7hom.wandb
+2024-06-27 14:59:18,400 DEBUG   HandlerThread:4111 [handler.py:handle_request():139] handle_request: run_start
+2024-06-27 14:59:18,429 DEBUG   HandlerThread:4111 [system_info.py:__init__():31] System info init
+2024-06-27 14:59:18,429 DEBUG   HandlerThread:4111 [system_info.py:__init__():46] System info init done
+2024-06-27 14:59:18,430 INFO    HandlerThread:4111 [system_monitor.py:start():150] Starting system monitor
+2024-06-27 14:59:18,430 INFO    SystemMonitor:4111 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2024-06-27 14:59:18,431 INFO    HandlerThread:4111 [system_monitor.py:probe():168] Collecting system info
+2024-06-27 14:59:18,433 INFO    SystemMonitor:4111 [interfaces.py:start():168] Started cpu
+2024-06-27 14:59:18,434 INFO    SystemMonitor:4111 [interfaces.py:start():168] Started disk
+2024-06-27 14:59:18,436 INFO    SystemMonitor:4111 [interfaces.py:start():168] Started gpu
+2024-06-27 14:59:18,438 INFO    SystemMonitor:4111 [interfaces.py:start():168] Started memory
+2024-06-27 14:59:18,439 INFO    SystemMonitor:4111 [interfaces.py:start():168] Started network
+2024-06-27 14:59:18,483 DEBUG   HandlerThread:4111 [system_info.py:probe():195] Probing system
+2024-06-27 14:59:18,489 DEBUG   HandlerThread:4111 [system_info.py:_probe_git():180] Probing git
+2024-06-27 14:59:18,504 DEBUG   HandlerThread:4111 [system_info.py:_probe_git():188] Probing git done
+2024-06-27 14:59:18,504 DEBUG   HandlerThread:4111 [system_info.py:probe():241] Probing system done
+2024-06-27 14:59:18,504 DEBUG   HandlerThread:4111 [system_monitor.py:probe():177] {'os': 'Linux-5.15.0-113-generic-x86_64-with-glibc2.17', 'python': '3.8.13', 'heartbeatAt': '2024-06-27T14:59:18.483999', 'startedAt': '2024-06-27T14:59:18.276751', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', 'roberta-large', '--lora_rank', '4', '--task_name', 'qnli', '--do_train', '--do_eval', '--seed', '0', '--max_seq_length', '128', '--per_device_train_batch_size', '32', '--learning_rate', '1e-4', '--cls_learning_rate', '5e-4', '--num_train_epochs', '1', '--save_steps', '-1', '--evaluation_strategy', 'epoch', '--logging_steps', '1', '--overwrite_output_dir', '--output_dir', 'results_qnli_4'), 'state': 'running', 'program': '/home/user/DoRA-XS/main_glue.py', 'codePath': 'main_glue.py', 'git': {'remote': 'https://github.com/Hamid-Nasiri/DoRA-XS.git', 'commit': '611e710d5359067eb4b9a2fe7349e8459cc7cda6'}, 'email': 'nasiri.hamid@gmail.com.', 'root': '/home/user/DoRA-XS', 'host': 'gpu-1080-01', 'username': 'user', 'executable': '/home/user/miniconda3/envs/doraxs/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2920.8931666666667, 'min': 1200.0, 'max': 4000.0}, 'cpu_freq_per_core': [{'current': 1200.0, 'min': 1200.0, 'max': 4000.0}, {'current': 4000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 4000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 3597.916, 'min': 1200.0, 'max': 4000.0}, {'current': 4000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 4000.0, 'min': 1200.0, 'max': 4000.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4000.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4000.0}, {'current': 2500.0, 'min': 1200.0, 'max': 4000.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4000.0}, {'current': 1200.0, 'min': 1200.0, 'max': 4000.0}, {'current': 2500.0, 'min': 1200.0, 'max': 4000.0}], 'disk': {'total': 97.87200164794922, 'used': 32.05815124511719}, 'gpu': 'NVIDIA GeForce GTX 1080', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1080', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce GTX 1080', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce GTX 1080', 'memory_total': 8589934592}, {'name': 'NVIDIA GeForce GTX 1080', 'memory_total': 8589934592}], 'memory': {'total': 31.253276824951172}}
+2024-06-27 14:59:18,504 INFO    HandlerThread:4111 [system_monitor.py:probe():178] Finished collecting system info
+2024-06-27 14:59:18,504 INFO    HandlerThread:4111 [system_monitor.py:probe():181] Publishing system info
+2024-06-27 14:59:18,504 DEBUG   HandlerThread:4111 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2024-06-27 14:59:18,506 DEBUG   HandlerThread:4111 [system_info.py:_save_pip():67] Saving pip packages done
+2024-06-27 14:59:18,506 DEBUG   HandlerThread:4111 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2024-06-27 14:59:20,814 DEBUG   HandlerThread:4111 [system_info.py:_save_conda():86] Saving conda packages done
+2024-06-27 14:59:20,816 INFO    HandlerThread:4111 [system_monitor.py:probe():183] Finished publishing system info

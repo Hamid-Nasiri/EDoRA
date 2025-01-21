@@ -1,0 +1,147 @@
+{
+    "os": "Linux-5.15.0-113-generic-x86_64-with-glibc2.17",
+    "python": "3.8.13",
+    "heartbeatAt": "2024-06-27T14:59:18.483999",
+    "startedAt": "2024-06-27T14:59:18.276751",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name_or_path",
+        "roberta-large",
+        "--lora_rank",
+        "4",
+        "--task_name",
+        "qnli",
+        "--do_train",
+        "--do_eval",
+        "--seed",
+        "0",
+        "--max_seq_length",
+        "128",
+        "--per_device_train_batch_size",
+        "32",
+        "--learning_rate",
+        "1e-4",
+        "--cls_learning_rate",
+        "5e-4",
+        "--num_train_epochs",
+        "1",
+        "--save_steps",
+        "-1",
+        "--evaluation_strategy",
+        "epoch",
+        "--logging_steps",
+        "1",
+        "--overwrite_output_dir",
+        "--output_dir",
+        "results_qnli_4"
+    ],
+    "state": "running",
+    "program": "/home/user/DoRA-XS/main_glue.py",
+    "codePath": "main_glue.py",
+    "git": {
+        "remote": "https://github.com/Hamid-Nasiri/DoRA-XS.git",
+        "commit": "611e710d5359067eb4b9a2fe7349e8459cc7cda6"
+    },
+    "email": "nasiri.hamid@gmail.com.",
+    "root": "/home/user/DoRA-XS",
+    "host": "gpu-1080-01",
+    "username": "user",
+    "executable": "/home/user/miniconda3/envs/doraxs/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2920.8931666666667,
+        "min": 1200.0,
+        "max": 4000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 3597.916,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 4000.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 4000.0
+        },
+        {
+            "current": 2500.0,
+            "min": 1200.0,
+            "max": 4000.0
+        }
+    ],
+    "disk": {
+        "total": 97.87200164794922,
+        "used": 32.05815124511719
+    },
+    "gpu": "NVIDIA GeForce GTX 1080",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080",
+            "memory_total": 8589934592
+        },
+        {
+            "name": "NVIDIA GeForce GTX 1080",
+            "memory_total": 8589934592
+        },
+        {
+            "name": "NVIDIA GeForce GTX 1080",
+            "memory_total": 8589934592
+        },
+        {
+            "name": "NVIDIA GeForce GTX 1080",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 31.253276824951172
+    }
+}
