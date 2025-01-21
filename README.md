@@ -21,20 +21,28 @@ conda activate edora
 cd EDoRA ; pip install -r requirements.txt
 ```
 ## Quickstart
-...Complete...
+EDoRA is built on top of [HuggingFace Transformers](https://huggingface.co/docs/transformers/en/index), [PEFT libraries](https://huggingface.co/docs/peft/en/index) and [LoRA-XS](https://github.com/MohammadrezaBanaei/LoRA-XS). Initially, DoRA modules are integrated into the model in the standard manner. Subsequently, the `find_and_initialize` function iterates through these DoRA modules. During this process, each DoRA module is converted into an EDoRA module. This conversion entails two key steps:
+
+1. Performing truncated Singular Value Decomposition (SVD) on the pre-trained weights associated with the frozen A and B matrices.
+
+2. Incorporating an r x r matrix (represented as matrix R in the figure above) into the module.
 
 
 ## GLUE Experiments
-...Complete...
+To reproduce our GLUE results, please run the `scripts/run_glue.py` script as follows (using the QNLI task as an example):
+	
+```bash
+python scripts/run_glue.py --target_task qnli
+```
 
 ## Citation
 If you use this code for your research, please cite the following paper:
 ```
-@article{nasiri2024edora,
+@article{nasiri2025edora,
   title={EDoRA: Efficient Weight-Decomposed Low-Rank Adaptation via Singular Value Decomposition},
   author={Nasiri, Hamid and Garraghan, Peter},
   journal={arXiv preprint arXiv:...},
-  year={2024}
+  year={2025}
 }
 ```
 
