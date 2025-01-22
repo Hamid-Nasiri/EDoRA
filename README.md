@@ -1,6 +1,6 @@
 # EDoRA: Efficient Weight-Decomposed Low-Rank Adaptation via Singular Value Decomposition
 
-Code for the paper: "[EDoRA: Efficient Weight-Decomposed Low-Rank Adaptation via Singular Value Decomposition](https://arxiv.org/abs/...)"
+Code for the paper: "[EDoRA: Efficient Weight-Decomposed Low-Rank Adaptation via Singular Value Decomposition](https://arxiv.org/abs/2501.12067)"
 
 ## Introduction
 We introduce **EDoRA** (Efficient Weight-Decomposed Low-Rank Adaptation), a highly parameter-efficient PEFT method that leverages a decomposition strategy and SVD-based initialization to overcome the scalability and learning pattern limitation of existing PEFT methods.
@@ -41,7 +41,7 @@ If you use this code for your research, please cite the following paper:
 @article{nasiri2025edora,
   title={EDoRA: Efficient Weight-Decomposed Low-Rank Adaptation via Singular Value Decomposition},
   author={Nasiri, Hamid and Garraghan, Peter},
-  journal={arXiv preprint arXiv:...},
+  journal={arXiv preprint arXiv:2501.12067},
   year={2025}
 }
 ```
