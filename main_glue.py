@@ -886,8 +886,8 @@ def main():
     else:
         trainer.create_model_card(**kwargs)
 
-    method_name = "DoRA-XS_Random_Initialization"
-    excel_file_path = f'results_6000ada_cuda{data_args.cuda_device}.xlsx'
+    method_name = "EDoRA"
+    excel_file_path = f'results_cuda{data_args.cuda_device}.xlsx'
     sheet_name = 'Sheet1'
     task_name = data_args.task_name
     ## Writing Results to Excel File
